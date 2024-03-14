@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>boolzapp</title>
+</head>
+<body>
+
+ <main>
+
+  
+  <section class="main-wrapper">
+
+   <div class="container d-flex ">
+     <!-- colonna sinistra -->
+    <div class="col-left ">
+
+      <div class="top-bar d-flex between ">
+
+         <div class="image-small">
+           <img src="img/avatar_1.jpg" alt="">
+         </div>
+
+         <div class="icons d-flex">
+
+          <div>
+            <i class="fa-solid fa-circle-notch"></i>
+          </div>
+          
+          <div>
+            <i class="fa-solid fa-message"></i>
+          </div>
+          
+          <div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+
+         </div>
+
+      </div>
+
+      <div class="blu-bar  d-flex">
+        <span class="circle"> <i class="fa-regular fa-bell"></i></span>
+
+        <div class="text-inside">
+          <span><h4>Ricevi notifiche di nuovi messaggi</h4></span>
+          <p><a href="">attiva notifiche dekstop</a></p>
+        </div>
+      </div>
+
+      <div class="bar-research d-flex">
+
+        <div class="research-icon ">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="input-research ">
+          <input type="text" placeholder="cerca o inizia una nuova chat">
+        </div>
+
+      </div>
+
+        <!-- users -->
+      <div class="contenitor-users">
+
+        <div class="user d-flex ">
+
+          <div class="image-small">
+            <img src="img/avatar_3.jpg" alt="">
+          </div>
+
+          <div class="text-inside ">
+             <h3>Lorenzo</h3>
+             <p class="p"> Lorem, ipsum dolor sit amet</p>
+          </div>
+
+          <div class="timing">
+             <p>16:40</p>
+          </div>
+
+        </div>
+
+        <div class="user d-flex ">
+
+          <div class="image-small">
+            <img src="img/avatar_io.jpg" alt="">
+          </div>
+
+          <div class="text-inside ">
+             <h3>Martina</h3>
+             <p class="p"> Lorem, ipsum dolor sit amet</p>
+          </div>
+
+          <div class="timing">
+             <p>13:40</p>
+          </div>
+
+        </div>
+
+        <div class="user d-flex ">
+
+          <div class="image-small">
+            <img src="img/avatar_4.jpg" alt="">
+          </div>
+
+          <div class="text-inside ">
+             <h3>Lazza</h3>
+             <p class="p"> Lorem, ipsum dolor sit amet</p>
+          </div>
+
+          <div class="timing">
+             <p>11:40</p>
+          </div>
+
+        </div>
+
+        <div class="user d-flex ">
+
+          <div class="image-small">
+            <img src="img/avatar_5.jpg" alt="">
+          </div>
+
+          <div class="text-inside ">
+             <h3>Goelier</h3>
+             <p class="p"> Lorem, ipsum dolor sit amet</p>
+          </div>
+
+          <div class="timing">
+             <p>16:40</p>
+          </div>
+
+        </div>
+
+        <div class="user d-flex ">
+
+          <div class="image-small">
+            <img src="img/avatar_6.jpg" alt="">
+          </div>
+
+          <div class="text-inside ">
+             <h3>Arianna</h3>
+             <p class="p"> Lorem, ipsum dolor sit amet</p>
+          </div>
+
+          <div class="timing">
+             <p>15:40</p>
+          </div>
+
+        </div>
+
+        <div class="user d-flex ">
+
+          <div class="image-small">
+            <img src="img/avatar_7.jpg" alt="">
+          </div>
+
+          <div class="text-inside ">
+             <h3>Gianluca</h3>
+             <p class="p"> Lorem, ipsum dolor sit amet</p>
+          </div>
+
+          <div class="timing">
+             <p>16:10</p>
+          </div>
+
+        </div>
+
+        <div class="user d-flex ">
+
+          <div class="image-small">
+            <img src="img/avatar_8.jpg" alt="">
+          </div>
+
+          <div class="text-inside ">
+             <h3>Samuel eto</h3>
+             <p class="p"> Lorem, ipsum dolor sit amet</p>
+          </div>
+
+          <div class="timing">
+             <p>15:15</p>
+          </div>
+
+        </div>
+
+        <div class="user d-flex ">
+
+          <div class="image-small">
+            <img src="img/avatar_8.jpg" alt="">
+          </div>
+
+          <div class="text-inside ">
+             <h3>Samuel eto</h3>
+             <p class="p"> Lorem, ipsum dolor sit amet</p>
+          </div>
+
+          <div class="timing">
+             <p>15:15</p>
+          </div>
+
+        </div>
+        
+
+      </div>
+
+
+    </div>
+
+    <div class="col-right ">
+
+      <div class="top-bar">
+
+        <div class="content-top-bar d-flex between">
+
+           <div class=" img-text d-flex ">
+             <div class="image-small-right">
+                <img src="img/avatar_1.jpg" alt="">
+             </div>
+    
+             <div class="text-inside-right">
+               <h3>Lorenzo</h3>
+               <p class="p-right"> Ultimo accesso oggi alle 16:45</p>
+            </div>
+           </div>
+  
+         <div class="icons-right d-flex">
+  
+           <div >
+             <i class="fa-solid fa-magnifying-glass"></i>
+           </div>
+          
+           <div>
+             <i class="fa-solid fa-paperclip"></i>
+           </div>
+          
+           <div>
+             <i class="fa-solid fa-ellipsis-vertical"></i>
+           </div>
+  
+         </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="contenitor-message ">
+
+        <div class="sent d-flex">
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, fugit id? Sit, voluptatem dolor blanditiis vel iste alias voluptatum repudiandae et quas soluta quisquam eum ut temporibus quaerat, cum eos.</p>
+          </div>
+
+          <div class="chevron-h d-flex">
+
+            <div class="icon-chevron">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="h-time">
+              <p>16:47</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="received d-flex">
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, fugit id? Sit, voluptatem dolor blanditiis vel iste alias voluptatum repudiandae et quas soluta quisquam eum ut temporibus quaerat, cum eos.</p>
+          </div>
+          <div class="chevron-h d-flex">
+
+            <div class="icon-chevron">
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="h-time">
+              <p>16:47</p>
+            </div>
+
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="message d-flex between ">
+
+        <div class="icons">
+          <i class="fa-regular fa-face-smile"></i>
+        </div>
+
+        <div class="input-bar-message">
+          <input class="input-big" type="text" placeholder="scrivi un messaggio">
+        </div>
+
+        <div class="icons">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+
+
+      </div>
+
+    </div>
+    
+
+   </div>
+
+
+
+
+
+
+ </section>
+
+
+ </main>
+  
+</body>
+</html>
