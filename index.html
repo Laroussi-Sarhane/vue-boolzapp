@@ -70,15 +70,15 @@
         <!-- users -->
       <div class="contenitor-users">
 
-        <div class="user d-flex ">
-
+        <div v-for="(contact, idex) in contacts" class="user d-flex ">
+            
           <div class="image-small">
-            <img src="img/avatar_3.jpg" alt="">
+            <img :src="contacts.avatar" alt="">
           </div>
 
           <div class="text-inside ">
-             <h3>Lorenzo</h3>
-             <p class="p"> Lorem, ipsum dolor sit amet</p>
+             <h3>{{contact.name}}</h3>
+             <p class="p"> {{contact.messages.message}} </p>
           </div>
 
           <div class="timing">
