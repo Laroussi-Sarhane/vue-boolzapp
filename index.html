@@ -218,13 +218,13 @@
 
         <div class="content-top-bar d-flex between">
 
-           <div class=" img-text d-flex ">
+           <div v-for="(contact, indice) in contacts"  class=" img-text d-flex ">
              <div class="image-small-right">
-                <img src="img/avatar_1.jpg" alt="">
+                <img :src="contact.avatar" alt="">
              </div>
     
              <div class="text-inside-right">
-               <h3>Lorenzo</h3>
+               <h3> {{contact.name}} </h3>
                <p class="p-right"> Ultimo accesso oggi alle 16:45</p>
             </div>
            </div>
