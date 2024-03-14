@@ -218,7 +218,7 @@
 
         <div class="content-top-bar d-flex between">
 
-           <div v-for="(contact, indice) in contacts"  class=" img-text d-flex ">
+           <div v-for="(contact, indice) in contacts" :class="{'hidden':indice!==counterUsers}" class=" img-text d-flex ">
              <div class="image-small-right">
                 <img :src="contact.avatar" alt="">
              </div>
