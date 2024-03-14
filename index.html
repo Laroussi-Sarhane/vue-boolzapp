@@ -18,7 +18,7 @@
   
   <section class="main-wrapper">
 
-   <div class="container d-flex ">
+   <div id="app" class="container d-flex ">
      <!-- colonna sinistra -->
     <div class="col-left ">
 
@@ -73,7 +73,7 @@
         <div v-for="(contact, idex) in contacts" class="user d-flex ">
             
           <div class="image-small">
-            <img :src="contacts.avatar" alt="">
+            <img :src="contact.avatar" alt="">
           </div>
 
           <div class="text-inside ">
@@ -87,7 +87,7 @@
 
         </div>
 
-        <div class="user d-flex ">
+        <!-- <div class="user d-flex ">
 
           <div class="image-small">
             <img src="img/avatar_io.jpg" alt="">
@@ -204,7 +204,7 @@
              <p>15:15</p>
           </div>
 
-        </div>
+        </div> -->
         
 
       </div>
