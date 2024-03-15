@@ -4,7 +4,9 @@ createApp({
 
   data(){
     return{
-      message:'hello vue',
+     
+      activeContact:{},
+     
       contacts: [
       
         {
@@ -169,27 +171,28 @@ createApp({
             ],
           }
         ],
-        risposteImpostate: [
-          "Wow, davvero? Che notizia fantastica!",
-          "Sì, capito, nessun problema!",
-          "Va bene, ci vediamo più tardi!",
-          "Oh, mi dispiace sentirlo. Spero migliori presto.",
-          "Hai ragione, dovremmo assolutamente farlo insieme.",
-          "Capisco completamente, non ti preoccupare.",
-          "Non preoccuparti, lo farò sicuramente.",
-          "Beh, dipende. Dobbiamo pensarci meglio.",
-          "Oh, interessante! Dimmi di più.",
-          "Ah, non lo sapevo! Grazie per l'informazione."
-        ],
         
-        counterUsers: 0,
+        
+        
     }  
   },
   methods: {
-   prendoChat(indice){
-    this.counterUsers = indice
-   }
+  
 
-  }  
+  },  
+
+  computed:{
+
+    visibleContacts(){
+
+      return this.contacts.filter(contact => contact.visible)
+
+    }
+
+
+  },
+  created(){
+    
+  }
 }).mount('#app')  
 

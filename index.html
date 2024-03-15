@@ -70,7 +70,7 @@
         <!-- users -->
       <div class="contenitor-users">
 
-        <div v-for="(contact, idex) in contacts" class="user d-flex ">
+        <div v-for="contact in visibleContacts"  @click="activeContact = contact" class="user d-flex  ">
             
           <div class="image-small">
             <img :src="contact.avatar" alt="">
@@ -87,126 +87,6 @@
 
         </div>
 
-        <!-- <div class="user d-flex ">
-
-          <div class="image-small">
-            <img src="img/avatar_io.jpg" alt="">
-          </div>
-
-          <div class="text-inside ">
-             <h3>Martina</h3>
-             <p class="p"> Lorem, ipsum dolor sit amet</p>
-          </div>
-
-          <div class="timing">
-             <p>13:40</p>
-          </div>
-
-        </div>
-
-        <div class="user d-flex ">
-
-          <div class="image-small">
-            <img src="img/avatar_4.jpg" alt="">
-          </div>
-
-          <div class="text-inside ">
-             <h3>Lazza</h3>
-             <p class="p"> Lorem, ipsum dolor sit amet</p>
-          </div>
-
-          <div class="timing">
-             <p>11:40</p>
-          </div>
-
-        </div>
-
-        <div class="user d-flex ">
-
-          <div class="image-small">
-            <img src="img/avatar_5.jpg" alt="">
-          </div>
-
-          <div class="text-inside ">
-             <h3>Goelier</h3>
-             <p class="p"> Lorem, ipsum dolor sit amet</p>
-          </div>
-
-          <div class="timing">
-             <p>16:40</p>
-          </div>
-
-        </div>
-
-        <div class="user d-flex ">
-
-          <div class="image-small">
-            <img src="img/avatar_6.jpg" alt="">
-          </div>
-
-          <div class="text-inside ">
-             <h3>Arianna</h3>
-             <p class="p"> Lorem, ipsum dolor sit amet</p>
-          </div>
-
-          <div class="timing">
-             <p>15:40</p>
-          </div>
-
-        </div>
-
-        <div class="user d-flex ">
-
-          <div class="image-small">
-            <img src="img/avatar_7.jpg" alt="">
-          </div>
-
-          <div class="text-inside ">
-             <h3>Gianluca</h3>
-             <p class="p"> Lorem, ipsum dolor sit amet</p>
-          </div>
-
-          <div class="timing">
-             <p>16:10</p>
-          </div>
-
-        </div>
-
-        <div class="user d-flex ">
-
-          <div class="image-small">
-            <img src="img/avatar_8.jpg" alt="">
-          </div>
-
-          <div class="text-inside ">
-             <h3>Samuel eto</h3>
-             <p class="p"> Lorem, ipsum dolor sit amet</p>
-          </div>
-
-          <div class="timing">
-             <p>15:15</p>
-          </div>
-
-        </div>
-
-        <div class="user d-flex ">
-
-          <div class="image-small">
-            <img src="img/avatar_8.jpg" alt="">
-          </div>
-
-          <div class="text-inside ">
-             <h3>Samuel eto</h3>
-             <p class="p"> Lorem, ipsum dolor sit amet</p>
-          </div>
-
-          <div class="timing">
-             <p>15:15</p>
-          </div>
-
-        </div> -->
-        
-
       </div>
 
 
@@ -218,7 +98,7 @@
 
         <div class="content-top-bar d-flex between">
 
-           <div v-for="(contact, indice) in contacts" :class="{'hidden':indice!==counterUsers}" class=" img-text d-flex ">
+           <div v-for="(contact, indice) in visibleContacts" :class="{'hidden':indice!==counterUsers}" class=" img-text d-flex ">
              <div class="image-small-right">
                 <img :src="contact.avatar" alt="">
              </div>
@@ -252,9 +132,9 @@
 
       <div class="contenitor-message ">
 
-        <div class="sent d-flex">
+        <div v-for="message in contacts" class="sent d-flex">
           <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, fugit id? Sit, voluptatem dolor blanditiis vel iste alias voluptatum repudiandae et quas soluta quisquam eum ut temporibus quaerat, cum eos.</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste recusandae eaque </p>
           </div>
 
           <div class="chevron-h d-flex">
