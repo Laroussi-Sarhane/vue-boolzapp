@@ -16,9 +16,9 @@
  <main>
 
   
-  <section class="main-wrapper">
+  <section id="app" class="main-wrapper">
 
-   <div id="app" class="container d-flex ">
+   <div  class="container d-flex ">
      <!-- colonna sinistra -->
     <div class="col-left ">
 
@@ -151,7 +151,7 @@
 
         </div>
 
-        <div class="received d-flex">
+        <div v-for="message in contacts"  class="received d-flex">
           <div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, fugit id? Sit, voluptatem dolor blanditiis vel iste alias voluptatum repudiandae et quas soluta quisquam eum ut temporibus quaerat, cum eos.</p>
           </div>
